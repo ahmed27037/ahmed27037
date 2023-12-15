@@ -1,9 +1,16 @@
-### Hi there 👋, Ahmed Osman
+
 ![](https://media.licdn.com/dms/image/D4D16AQH0FChln1qKyQ/profile-displaybackgroundimage-shrink_350_1400/0/1702675359918?e=1707955200&v=beta&t=q3QxnK_aDmujoKhm-vmvsy4428bnqSKY4hkg8UfdjlM)
 
-Frontend developer with expertise in React, Next.js, TypeScript, and Tailwind CSS. Explore my projects for modern and responsive web applications. Clone, install, and run applications following README steps. Connect on LinkedIn and Twitter or visit my portfolio website. For more, check out my LinkedIn profile. Happy coding! 
+# Ahmed Osman
 
-Skills:  REACT / JS / HTML / Tailwind CSS / Nextjs / Node / Express
+Frontend developer with expertise in React, Next.js, TypeScript, and Tailwind CSS. Explore my projects for modern and responsive web applications. Clone, install, and run applications following README steps. Connect on LinkedIn and Twitter or visit my portfolio website. For more, check out my LinkedIn profile. Happy coding! 
+ ### Skills and Experience 
+ * HTML, CSS, JS 💻
+ * React ⚛️
+ * Next js 🔺
+ * Tailwind 〰️
+ * Node js 🛠️
+ * Express 🇪︎
 
 - 🔭 I’m currently working on my skills 
 - 💬 Ask me about anything 
