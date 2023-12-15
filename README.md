@@ -19,9 +19,7 @@ Frontend developer with expertise in React, Next.js, TypeScript, and Tailwind CS
 - 📫 How to reach me: ahmedamjedosman@gmail.com 
 
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=ahmed27037)](https://github.com/ryo-ma/github-profile-trophy)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmed27037)](https://github.com/anuraghazra/github-readme-stats)
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=ahmed27037&show_icons=true)  
 
