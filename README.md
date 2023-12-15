@@ -19,8 +19,20 @@ Frontend developer with expertise in React, Next.js, TypeScript, and Tailwind CS
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ahmed27037)](https://github.com/anuraghazra/github-readme-stats)
 
+# My Work
 
-![GVXn](https://github.com/ahmed27037/ahmed27037/assets/145661706/27dc78f8-a29c-49e6-891d-66c468896a7c)
+
+https://github.com/ahmed27037/ahmed27037/assets/145661706/bcbe7bfc-a83b-4101-ba83-ac6b12e1a898
+
+
+
+https://github.com/ahmed27037/ahmed27037/assets/145661706/148a319f-0ea1-4a11-9651-f385ca4f568e
+
+
+
+https://github.com/ahmed27037/ahmed27037/assets/145661706/0f83b782-8ab9-4c85-b1fa-d0abadd047de
+
+
 
 ### Contacts
 
