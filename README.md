@@ -26,6 +26,5 @@ Repo: [riscv32-harvard-pipeline](https://github.com/ahmed27037/riscv32-harvard-p
 <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
 </p>
 
-- Email: ahmedamjedosman@gmail.com
+- Email: aasaosma@uwaterloo.ca
 - GitHub: [@ahmed27037](https://github.com/ahmed27037)
-- LinkedIn: [Ahmed Osman](https://www.linkedin.com/in/ahmed-osman2005/)
