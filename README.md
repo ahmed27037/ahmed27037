@@ -1,66 +1,55 @@
-# Hardware Projects
+# Ottoman
 
-Three digital design projects with full testbenches and simulation.
+Hi! I'm an enthusiastic electrical engineer passionate about digital design, computer architecture, and hardware-software co-design. I enjoy building RTL designs, exploring neural processing units, and creating efficient hardware implementations.
 
----
+## About Me
 
-## Projects
+I specialize in digital design and verification, with hands-on experience in RTL development, pipeline design, and hardware acceleration. I'm particularly interested in processor architecture, neural processing units, and video processing systems.
 
-1. **Quantized-Stream NPU** - 4×4 INT8 matrix accelerator with quantization
-2. **riscv32-harvard-pipeline** - 5-stage RV32I processor with forwarding
-3. **VGA Image Stream with Ping-Pong FIFO buffers** - Video streaming to VGA
+## Skills
 
-Each project has its own README with details.
+### Programming Languages
 
----
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+- ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Prerequisites
+### Digital Design & Hardware Description Languages
 
-```
-choco install icarus-verilog  # Windows
-brew install icarus-verilog   # macOS
-sudo apt install iverilog     # Linux
-```
+- ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-005F9E?style=for-the-badge)
+- ![Verilog](https://img.shields.io/badge/Verilog-FF6F00?style=for-the-badge)
+- ![VHDL](https://img.shields.io/badge/VHDL-512BD4?style=for-the-badge)
 
-GTKwave (for waveforms):
-```
-choco install gtkwave         # Windows
-brew install gtkwave          # macOS
-sudo apt install gtkwave      # Linux
-```
+### Tools & Frameworks
 
----
+- ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+- ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+- ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
+- ![Mermaid](https://img.shields.io/badge/Mermaid-FF6B6B?style=for-the-badge&logo=mermaid&logoColor=white)
+- ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+- ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-FF6F00?style=for-the-badge)
+- ![GTKwave](https://img.shields.io/badge/GTKwave-7C3AED?style=for-the-badge)
 
-## Quick Commands
+### Digital Design Skills
 
-### Quantized-Stream NPU
+- **RTL Design**: SystemVerilog, Verilog, VHDL
+- **Processor Architecture**: Pipelined processors, hazard detection, forwarding
+- **Neural Processing**: INT8 quantization, matrix multiplication accelerators
+- **Video Processing**: VGA timing, FIFO buffering, pixel streaming
+- **Verification**: Self-checking testbenches, waveform analysis, golden models
+- **Hardware-Software Co-design**: C++ reference models, Python test generation
 
-Full integration test (quantize FP32 → RTL → verify):
-```powershell
-cd "Quantized-Stream-NPU"; g++ -std=c++17 -O2 -o build/gen_test_vectors.exe sw/gen_test_vectors.cpp; .\build\gen_test_vectors.exe; iverilog -g2012 -o build/npu_integrated_tb rtl/pe.sv rtl/npu_core.sv tb/npu_integrated_tb.sv; vvp build/npu_integrated_tb
-```
+## Featured Projects
 
-### RISC-V Pipeline
+- **[Quantized Stream NPU](https://github.com/ahmed27037/Quantized-Stream-NPU)** - INT8 neural processing unit with pipelined outer-product engine
+- **[RISCV32 Harvard Pipeline](https://github.com/ahmed27037/riscv32-harvard-pipeline)** - 5-stage pipelined RISC-V processor
+- **[VGA Image Stream with Ping-Pong FIFO Buffers](https://github.com/ahmed27037/VGA-Image-Stream-with-Ping-Pong-FIFO-buffers)** - Video streaming system with double-buffered FIFOs
 
-CPU test:
-```powershell
-cd "riscv32-harvard-pipeline"; iverilog -g2012 -s cpu_test -o sim_cpu Test\cpu_test.sv CPU\cpu.v CPU\D_memory\D_memory.v CPU\Instruction_Memory\instruction_mem.v CPU\Processor\RV32I_processor.v CPU\Processor\regfile.v CPU\Processor\controller.v CPU\Processor\mux.v CPU\Processor\imm_decode.v CPU\Processor\load_store_modifier.v CPU\Processor\Pipeline_Registers\if_id_reg.v CPU\Processor\Pipeline_Registers\id_exe_reg.v CPU\Processor\Pipeline_Registers\exe_mem_reg.v CPU\Processor\Pipeline_Registers\mem_wb_reg.v CPU\Processor\Pipeline_Registers\pc_reg.v CPU\Processor\ALU\ALU.v CPU\Processor\ALU\shifter.v CPU\Processor\AddORSub\add_sub.v CPU\Processor\AddORSub\CLA_32.v CPU\Processor\Comparator\comp_32.v; vvp sim_cpu; gtkwave cpu_test.vcd
-```
+## Contact
 
-### VGA Image Stream
-
-Simulation:
-```powershell
-cd "VGA Image Stream with Ping-Pong FIFO buffers"; iverilog -g2012 -o stream_tb top_stream_tb.v top_stream.v video_stream_fifo.v vga.v; vvp stream_tb
-```
-
-Waveforms:
-```powershell
-cd "VGA Image Stream with Ping-Pong FIFO buffers"; powershell -ExecutionPolicy Bypass -File tools\waves\wave_top_stream_tb.ps1
-```
-
----
-
-## Block Diagrams
-
-Each project includes HTML diagrams in its `diagrams/` or `Diagrams/` folder. Open in a browser to view architecture details.
+- 📧 Email: aasaosma@uwaterloo.ca
+- 💻 GitHub: [@ahmed27037](https://github.com/ahmed27037)
